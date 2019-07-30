@@ -60,6 +60,9 @@ def main():
     print("")
     for TA in TASched:
         print(TA.name, "cleans", TA.cleanupCount, "times")
+    
+    #Wait for user input before exiting
+    input()
 
 
 main()
