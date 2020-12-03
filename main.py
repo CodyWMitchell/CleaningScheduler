@@ -3,6 +3,7 @@ import calendar
 
 
 class TA:
+    # Store individual TA workdays and and counts for the days they've worked
     def __init__(self, name, workdays, cCount=0):
         self.name = name
         self.workdays = [i[0:2] for i in workdays]
@@ -10,6 +11,7 @@ class TA:
 
 
 def parseSched(textFile):
+    # Parse the text file and create TA objects accordingly
     schedFile = open(textFile, 'r')
     sched = []
     for line in schedFile:
